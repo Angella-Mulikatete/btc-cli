@@ -1,0 +1,18 @@
+[package]
+name = "btc-cli"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+bip39 = { version = "3.0.0", features = ["rand"] }
+bitcoin = { version = "0.32.102", features = ["rand-std", "serde"] }
+bitcoincore-rpc = "0.19.0"
+clap = { version = "4.6.7", features = ["derive"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+thiserror = "2.0.21"
+
+[dev-dependencies]
+assert_cmd = "2.2.2"
+predicates = "3.1.4"
