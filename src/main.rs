@@ -1,3 +1,5 @@
+
 fn main() {
-    println!("Hello, world!");
+    println!("btc-cli: not yet wired up");
 }
+
