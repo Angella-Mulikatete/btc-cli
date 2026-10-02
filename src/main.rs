@@ -1,5 +1,5 @@
+use std::process::ExitCode;
 
-fn main() {
-    println!("btc-cli: not yet wired up");
+fn main() -> ExitCode {
+    btc_cli::cli::run()
 }
-
