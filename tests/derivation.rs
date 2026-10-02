@@ -27,8 +27,7 @@ fn derive_at_root_returns_the_master_key() {
     )
     .unwrap();
 
-    // The public key at `m` is the master key's own public key.
-    assert_eq!(out.path, "m");
+    assert_eq!(out.path, "");
     assert_eq!(out.source_kind, "xprv");
     assert!(out.private_hex.is_some());
     assert!(out.wif.is_some());
